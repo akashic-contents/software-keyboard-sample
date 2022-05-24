@@ -1,4 +1,4 @@
-import Keyboard = require("./Keyboard");
+import { Keyboard } from "./Keyboard";
 import type { KeyboardParameterObject } from "./KeyboardParameterObject";
 import * as def from "./define";
 import { SpriteReader } from "./SpriteReader";

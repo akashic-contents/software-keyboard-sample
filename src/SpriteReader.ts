@@ -9,8 +9,6 @@ export class SpriteReader {
 	private _coordinates: SpriteCoordinates;
 	/** 統合された画像 */
 	private _image: g.ImageAsset;
-	/** 統合画像から作成されたサーフェイス */
-	// private _surface: g.Surface;
 
 	/**
 	 * @param scene 描画対象のシーン
@@ -21,7 +19,6 @@ export class SpriteReader {
 		this._scene = scene;
 		this._coordinates = scene.asset.getJSONContentById(hintName);
 		this._image = scene.asset.getImageById(imageName);
-		// this._surface = g.SurfaceUtil.asSurface(this._image);
 	}
 
 	/**

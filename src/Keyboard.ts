@@ -8,7 +8,7 @@ import { SpriteReader } from "./SpriteReader";
  * 英数字、記号も扱いたい場合は `MultiKeyboard` クラスを利用する。
  * 本クラスの利用にはアセットID, g.Fontが必要となる。
  */
-class Keyboard extends g.E {
+export class Keyboard extends g.E {
 	/**
 	 * 描画に利用されるフォント。
 	 * この値を変更した場合、 `this.invalidate()` を呼び出す必要がある。
@@ -268,5 +268,3 @@ class Keyboard extends g.E {
 		this.inputtingLabel.invalidate();
 	}
 }
-
-export = Keyboard;
