@@ -243,22 +243,6 @@ export class Keyboard extends g.E {
 		this.keyboardBack.modified();
 	}
 
-	destroy(): void {
-		super.destroy();
-		this.common.destroy();
-		this.common = null;
-		this.kanaKey.destroy();
-		this.kanaKey = null;
-		this.keyboardBack.destroy();
-		this.keyboardBack = null;
-		this.inputtingLabelBack.destroy();
-		this.inputtingLabelBack = null;
-		this.inputtingLabel.destroy();
-		this.inputtingLabel = null;
-		this.backSpaceKey.destroy();
-		this.backSpaceKey = null;
-	}
-
 	get text(): string {
 		return this.inputtingLabel.text;
 	}
